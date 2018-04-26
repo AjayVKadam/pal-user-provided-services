@@ -1,0 +1,6 @@
+---
+memory: 1G
+instances: 1
+applications:
+- name: dm-cohort-service
+  path: build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar
