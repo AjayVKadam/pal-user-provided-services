@@ -17,14 +17,15 @@ public class HomeController {
     DataSource dataSource;
 
     @GetMapping("/")
-    public String home() {
+    public List<Cohort> home() {
         //return "Hello PALs from Wells Fargo in Des Moines";
 
         List<Cohort> list = getUsers();
 
-        String allNames = convertToString(list);
+        return list;
+        //String allNames = convertToString(list);
 
-        return allNames;
+        //return allNames;
     }
 
 
