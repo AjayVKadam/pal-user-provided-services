@@ -23,12 +23,23 @@ repositories {
 	mavenCentral()
 }
 
+//dependencyManagement {
+//	imports {
+//		mavenBom "io.pivotal.spring.cloud:spring-cloud-task-dependencies"
+//	}
+//}
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile("org.springframework.boot:spring-boot-starter-jdbc")
 
 	compile("mysql:mysql-connector-java:6.0.6")
+
+	compile("org.projectlombok:lombok")
+
+	compile 'org.springframework.cloud:spring-cloud-starter-task:1.2.2.RELEASE'
+//	compile("org.springframework.cloud:spring-cloud-starter-task")
+//	compile("org.springframework.boot:spring-boot-starter")
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

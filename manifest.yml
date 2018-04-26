@@ -2,5 +2,8 @@
 memory: 1G
 instances: 1
 applications:
-- name: dm-cohort-service
+- name: dm-cohort-task
+  no-start: true
   path: build/libs/pal-user-provided-services-0.0.1-SNAPSHOT.jar
+  services:
+  - AWS_COHORT_DB_SERVICE

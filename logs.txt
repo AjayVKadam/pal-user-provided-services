@@ -1,0 +1,278 @@
+Retrieving logs for app [36;1mdm-cohort-task[0m in org [36;1majay-kadam[0m / space [36;1msandbox[0m as [36;1majay.v.kadam@wellsfargo.com[0m...
+
+   2018-04-26T12:47:02.91-0600 [API/1] OUT Updated app with guid cb637816-048b-447c-b086-19f2d226e7dc ({"route"=>"ae8a5588-5772-435a-b929-f7017111a985", :verb=>"add", :relation=>"routes", :related_guid=>"ae8a5588-5772-435a-b929-f7017111a985"})
+   2018-04-26T12:47:05.36-0600 [API/1] OUT Uploading bits for app with guid cb637816-048b-447c-b086-19f2d226e7dc
+   2018-04-26T12:47:35.27-0600 [API/1] OUT Creating droplet for app with guid cb637816-048b-447c-b086-19f2d226e7dc
+   2018-04-26T12:48:03.21-0600 [API/1] OUT Process has crashed with type: "web"
+   2018-04-26T12:48:03.22-0600 [API/1] OUT App instance exited with guid cb637816-048b-447c-b086-19f2d226e7dc payload: {"instance"=>"2ce77410-2388-4ef9-762c-fe3b", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"Codependent step exited", "crash_count"=>2, "crash_timestamp"=>1524768483164687811, "version"=>"8cb988c4-0889-4d64-b838-c7975ad37a87"}
+   2018-04-26T12:48:10.87-0600 [API/1] OUT Process has crashed with type: "web"
+   2018-04-26T12:48:10.88-0600 [API/1] OUT App instance exited with guid cb637816-048b-447c-b086-19f2d226e7dc payload: {"instance"=>"a6c64be8-c201-44dd-58a6-12d3", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"Codependent step exited", "crash_count"=>3, "crash_timestamp"=>1524768490856265092, "version"=>"8cb988c4-0889-4d64-b838-c7975ad37a87"}
+   2018-04-26T12:48:55.48-0600 [CELL/0] OUT Creating container
+   2018-04-26T12:48:55.84-0600 [CELL/0] OUT Successfully created container
+   2018-04-26T12:48:59.01-0600 [CELL/0] OUT Starting health monitoring of container
+   2018-04-26T12:48:59.09-0600 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98394K -XX:ReservedCodeCacheSize=240M -XX:CompressedClassSpaceSize=18037K -Xss1M -Xmx368943K
+   2018-04-26T12:49:00.62-0600 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2018-04-26T12:49:00.62-0600 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2018-04-26T12:49:00.62-0600 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2018-04-26T12:49:00.62-0600 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2018-04-26T12:49:00.62-0600 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2018-04-26T12:49:00.62-0600 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2018-04-26T12:49:00.63-0600 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.0.1.RELEASE)
+   2018-04-26T12:49:00.77-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:00.767  INFO 15 --- [           main] pertySourceApplicationContextInitializer : Adding 'cloud' PropertySource to ApplicationContext
+   2018-04-26T12:49:00.85-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:00.853  INFO 15 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+   2018-04-26T12:49:00.87-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:00.873  INFO 15 --- [           main] i.p.p.p.DemoTaskApplication              : Starting DemoTaskApplication on f7b597a4-05a0-45dc-4b4f-fd36 with PID 15 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2018-04-26T12:49:00.87-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:00.873  INFO 15 --- [           main] i.p.p.p.DemoTaskApplication              : The following profiles are active: cloud
+   2018-04-26T12:49:00.94-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:00.946  INFO 15 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 18:49:00 UTC 2018]; root of context hierarchy
+   2018-04-26T12:49:02.02-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.026  INFO 15 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+   [31m2018-04-26T12:49:02.03-0600 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.[0m
+   2018-04-26T12:49:02.04-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.041  INFO 15 --- [           main] o.c.r.o.s.c.s.r.PooledDataSourceCreator  : Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2018-04-26T12:49:02.25-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.251  INFO 15 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db64d43e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-04-26T12:49:02.67-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.674  INFO 15 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2018-04-26T12:49:02.70-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.709  INFO 15 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2018-04-26T12:49:02.70-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.709  INFO 15 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+   2018-04-26T12:49:02.72-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.725  INFO 15 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+   2018-04-26T12:49:02.93-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.936  INFO 15 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2018-04-26T12:49:02.93-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:02.936  INFO 15 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1993 ms
+   2018-04-26T12:49:03.11-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.109  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'clientCertificateMapper' to: [/*]
+   2018-04-26T12:49:03.11-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.110  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-04-26T12:49:03.11-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.110  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-04-26T12:49:03.11-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.110  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-04-26T12:49:03.11-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.110  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+   2018-04-26T12:49:03.11-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.111  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+   2018-04-26T12:49:03.22-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.225  INFO 15 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+   2018-04-26T12:49:03.23-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:03.233  WARN 15 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2018-04-26T12:49:04.00-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:04.002  INFO 15 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+   2018-04-26T12:49:04.38-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:04.388  INFO 15 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql]
+   2018-04-26T12:49:04.83-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:04.835  INFO 15 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql] in 447 ms.
+   2018-04-26T12:49:04.96-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:04.967  INFO 15 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T12:49:05.35-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.350  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 18:49:00 UTC 2018]; root of context hierarchy
+   2018-04-26T12:49:05.45-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.456  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.util.List<io.pivotal.pal.paluserprovidedservices.Cohort> io.pivotal.pal.paluserprovidedservices.HomeController.home()
+   2018-04-26T12:49:05.46-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.462  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-04-26T12:49:05.46-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.463  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-04-26T12:49:05.50-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.501  INFO 15 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T12:49:05.50-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.502  INFO 15 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T12:49:05.83-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.838  INFO 15 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+   2018-04-26T12:49:05.84-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.841  INFO 15 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name '__cloudDataSource' has been autodetected for JMX exposure
+   2018-04-26T12:49:05.84-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.849  INFO 15 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean '__cloudDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=__cloudDataSource,type=HikariDataSource]
+   2018-04-26T12:49:05.85-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:05.857  INFO 15 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+   2018-04-26T12:49:06.22-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:06.224  INFO 15 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+   2018-04-26T12:49:06.23-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:06.229  INFO 15 --- [           main] i.p.p.p.DemoTaskApplication              : Started DemoTaskApplication in 6.667 seconds (JVM running for 7.132)
+   2018-04-26T12:49:06.66-0600 [APP/PROC/WEB/0] OUT 2018-04-26 18:49:06.663  INFO 15 --- [           main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 18:49:00 UTC 2018]; root of context hierarchy
+   2018-04-26T12:49:06.77-0600 [APP/PROC/WEB/0] OUT Exit status 0
+   2018-04-26T12:49:06.77-0600 [CELL/0] OUT Exit status 0
+   2018-04-26T12:49:06.79-0600 [CELL/0] OUT Stopping instance f7b597a4-05a0-45dc-4b4f-fd36
+   2018-04-26T12:49:06.79-0600 [CELL/0] OUT Destroying container
+   2018-04-26T12:49:07.12-0600 [CELL/0] OUT Successfully destroyed container
+   2018-04-26T12:50:32.28-0600 [API/1] OUT Process has crashed with type: "web"
+   2018-04-26T12:50:32.29-0600 [API/1] OUT App instance exited with guid cb637816-048b-447c-b086-19f2d226e7dc payload: {"instance"=>"e32d8b39-2533-4932-6443-758b", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>5, "crash_timestamp"=>1524768632270166596, "version"=>"8cb988c4-0889-4d64-b838-c7975ad37a87"}
+   2018-04-26T12:57:34.13-0600 [API/1] OUT Process has crashed with type: "web"
+   2018-04-26T12:57:34.14-0600 [API/1] OUT App instance exited with guid cb637816-048b-447c-b086-19f2d226e7dc payload: {"instance"=>"b8f5f415-c7eb-4f63-6379-dc27", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"Codependent step exited", "crash_count"=>7, "crash_timestamp"=>1524769054114941060, "version"=>"8cb988c4-0889-4d64-b838-c7975ad37a87"}
+   2018-04-26T13:03:46.44-0600 [API/1] OUT Updated app with guid cb637816-048b-447c-b086-19f2d226e7dc ({"name"=>"dm-cohort-task", "instances"=>1, "memory"=>1024, "environment_json"=>"PRIVATE DATA HIDDEN"})
+   2018-04-26T13:03:49.10-0600 [API/1] OUT Uploading bits for app with guid cb637816-048b-447c-b086-19f2d226e7dc
+   2018-04-26T13:04:02.03-0600 [STG/0] OUT Downloading hwc_buildpack...
+   2018-04-26T13:04:02.03-0600 [STG/0] OUT Downloading staticfile_buildpack...
+   2018-04-26T13:04:02.03-0600 [STG/0] OUT Downloading nodejs_buildpack...
+   2018-04-26T13:04:02.03-0600 [STG/0] OUT Downloading java_buildpack_offline...
+   2018-04-26T13:04:02.07-0600 [STG/0] OUT Downloaded binary_buildpack
+   2018-04-26T13:04:02.07-0600 [STG/0] OUT Downloading python_buildpack...
+   2018-04-26T13:04:02.08-0600 [STG/0] OUT Downloaded java_buildpack_offline
+   2018-04-26T13:04:02.08-0600 [STG/0] OUT Downloading go_buildpack...
+   2018-04-26T13:04:02.08-0600 [STG/0] OUT Downloaded hwc_buildpack
+   2018-04-26T13:04:02.08-0600 [STG/0] OUT Downloading ruby_buildpack...
+   2018-04-26T13:04:02.08-0600 [STG/0] OUT Downloaded nodejs_buildpack
+   2018-04-26T13:04:02.08-0600 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2018-04-26T13:04:02.11-0600 [STG/0] OUT Downloaded go_buildpack
+   2018-04-26T13:04:02.11-0600 [STG/0] OUT Downloading php_buildpack...
+   2018-04-26T13:04:02.12-0600 [STG/0] OUT Downloaded python_buildpack
+   2018-04-26T13:04:02.13-0600 [STG/0] OUT Downloaded ruby_buildpack
+   2018-04-26T13:04:02.13-0600 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2018-04-26T13:04:02.17-0600 [STG/0] OUT Downloaded php_buildpack
+   2018-04-26T13:04:02.21-0600 [STG/0] OUT Downloaded staticfile_buildpack
+   2018-04-26T13:04:02.21-0600 [STG/0] OUT Creating container
+   2018-04-26T13:04:02.53-0600 [STG/0] OUT Successfully created container
+   2018-04-26T13:04:02.64-0600 [STG/0] OUT Downloading build artifacts cache...
+   2018-04-26T13:04:02.65-0600 [STG/0] OUT Downloading app package...
+   2018-04-26T13:04:02.81-0600 [STG/0] OUT Downloaded build artifacts cache (131B)
+   2018-04-26T13:04:03.50-0600 [STG/0] OUT Downloaded app package (19.1M)
+   2018-04-26T13:04:05.73-0600 [STG/0] OUT [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.5[0m [34m(offline)[0m | https://github.com/cloudfoundry/java-buildpack.git#ffeefb9
+   2018-04-26T13:04:05.80-0600 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.10.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/trusty/x86_64/jvmkill-1.10.0_RELEASE.so [3m[32m(found in cache)[0m[23m
+   2018-04-26T13:04:05.81-0600 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m1.8.0_141[0m from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_141.tar.gz [3m[32m(found in cache)[0m[23m
+   2018-04-26T13:04:06.96-0600 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(1.1s)[0m[23m
+   2018-04-26T13:04:06.96-0600 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.9.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-3.9.0_RELEASE.tar.gz [3m[32m(found in cache)[0m[23m
+   2018-04-26T13:04:07.87-0600 [STG/0] OUT        Loaded Classes: 14249, Threads: 300
+   2018-04-26T13:04:07.88-0600 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.2.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.2.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2018-04-26T13:04:07.88-0600 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.8.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.8.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2018-04-26T13:04:07.88-0600 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m1.12.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.12.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2018-04-26T13:04:17.07-0600 [STG/0] OUT Exit status 0
+   2018-04-26T13:04:17.07-0600 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2018-04-26T13:04:17.07-0600 [STG/0] OUT Uploading build artifacts cache...
+   2018-04-26T13:04:17.07-0600 [STG/0] OUT Uploading droplet...
+   2018-04-26T13:04:17.11-0600 [STG/0] OUT Uploaded build artifacts cache (131B)
+   2018-04-26T13:04:17.94-0600 [API/1] OUT Creating droplet for app with guid cb637816-048b-447c-b086-19f2d226e7dc
+   2018-04-26T13:04:23.16-0600 [STG/0] OUT Uploaded droplet (65.4M)
+   2018-04-26T13:04:23.18-0600 [STG/0] OUT Uploading complete
+   2018-04-26T13:04:23.20-0600 [STG/0] OUT Stopping instance de70311e-c804-401c-871a-6add7a74d207
+   2018-04-26T13:04:23.21-0600 [STG/0] OUT Destroying container
+   2018-04-26T13:04:23.58-0600 [STG/0] OUT Successfully destroyed container
+   2018-04-26T13:04:35.99-0600 [API/1] OUT Process has crashed with type: "web"
+   2018-04-26T13:04:36.00-0600 [API/1] OUT App instance exited with guid cb637816-048b-447c-b086-19f2d226e7dc payload: {"instance"=>"7b79f87c-4d2a-4549-5a2a-c249", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"Codependent step exited", "crash_count"=>1, "crash_timestamp"=>1524769475944727458, "version"=>"4e72b524-b499-482a-96ee-74ef5a6d51f1"}
+   2018-04-26T13:04:36.01-0600 [CELL/0] OUT Creating container
+   2018-04-26T13:04:36.35-0600 [CELL/0] OUT Successfully created container
+   2018-04-26T13:04:39.17-0600 [CELL/0] OUT Starting health monitoring of container
+   2018-04-26T13:04:39.25-0600 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:CompressedClassSpaceSize=18037K -XX:MaxDirectMemorySize=10M -Xss1M -Xmx368943K -XX:MaxMetaspaceSize=98394K -XX:ReservedCodeCacheSize=240M
+   2018-04-26T13:04:41.04-0600 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2018-04-26T13:04:41.04-0600 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2018-04-26T13:04:41.04-0600 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2018-04-26T13:04:41.04-0600 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2018-04-26T13:04:41.04-0600 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2018-04-26T13:04:41.04-0600 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2018-04-26T13:04:41.05-0600 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.0.1.RELEASE)
+   2018-04-26T13:04:41.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:41.210  INFO 20 --- [           main] pertySourceApplicationContextInitializer : Adding 'cloud' PropertySource to ApplicationContext
+   2018-04-26T13:04:41.32-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:41.320  INFO 20 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+   2018-04-26T13:04:41.34-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:41.342  INFO 20 --- [           main] i.p.p.p.DemoTaskApplication              : Starting DemoTaskApplication on f8d321a4-db3a-4ce0-4dc5-9cd0 with PID 20 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2018-04-26T13:04:41.34-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:41.343  INFO 20 --- [           main] i.p.p.p.DemoTaskApplication              : The following profiles are active: cloud
+   2018-04-26T13:04:41.42-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:41.419  INFO 20 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:04:41 UTC 2018]; root of context hierarchy
+   2018-04-26T13:04:42.41-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:42.410  INFO 20 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+   [31m2018-04-26T13:04:42.42-0600 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.[0m
+   2018-04-26T13:04:42.42-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:42.426  INFO 20 --- [           main] o.c.r.o.s.c.s.r.PooledDataSourceCreator  : Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2018-04-26T13:04:42.62-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:42.625  INFO 20 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db64d43e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-04-26T13:04:43.03-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.036  INFO 20 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2018-04-26T13:04:43.07-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.071  INFO 20 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2018-04-26T13:04:43.07-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.072  INFO 20 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+   2018-04-26T13:04:43.09-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.090  INFO 20 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+   2018-04-26T13:04:43.32-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.319  INFO 20 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2018-04-26T13:04:43.32-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.320  INFO 20 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1906 ms
+   2018-04-26T13:04:43.51-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.513  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'clientCertificateMapper' to: [/*]
+   2018-04-26T13:04:43.51-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.514  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-04-26T13:04:43.51-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.514  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-04-26T13:04:43.51-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.514  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-04-26T13:04:43.51-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.514  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+   2018-04-26T13:04:43.51-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.514  INFO 20 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+   2018-04-26T13:04:43.62-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.625  INFO 20 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+   2018-04-26T13:04:43.63-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:43.631  WARN 20 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2018-04-26T13:04:44.22-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:44.226  INFO 20 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+   2018-04-26T13:04:44.66-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:44.660  INFO 20 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql]
+   2018-04-26T13:04:44.97-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:44.976  INFO 20 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql] in 316 ms.
+   2018-04-26T13:04:45.09-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:45.097  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:04:45.52-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:45.527  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:04:41 UTC 2018]; root of context hierarchy
+   2018-04-26T13:04:45.63-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:45.638  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.util.List<io.pivotal.pal.paluserprovidedservices.Cohort> io.pivotal.pal.paluserprovidedservices.HomeController.home()
+   2018-04-26T13:04:45.65-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:45.645  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-04-26T13:04:45.65-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:45.646  INFO 20 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-04-26T13:04:45.68-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:45.685  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:04:45.68-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:45.686  INFO 20 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:04:46.12-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:46.121  INFO 20 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+   2018-04-26T13:04:46.12-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:46.125  INFO 20 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name '__cloudDataSource' has been autodetected for JMX exposure
+   2018-04-26T13:04:46.13-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:46.134  INFO 20 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean '__cloudDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=__cloudDataSource,type=HikariDataSource]
+   2018-04-26T13:04:46.14-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:46.144  INFO 20 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+   2018-04-26T13:04:46.42-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:46.426  INFO 20 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+   2018-04-26T13:04:46.43-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:46.431  INFO 20 --- [           main] i.p.p.p.DemoTaskApplication              : Started DemoTaskApplication in 6.613 seconds (JVM running for 7.176)
+   2018-04-26T13:04:46.76-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:46.761  INFO 20 --- [           main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:04:41 UTC 2018]; root of context hierarchy
+   2018-04-26T13:04:46.89-0600 [APP/PROC/WEB/0] OUT Exit status 0
+   2018-04-26T13:04:46.89-0600 [CELL/0] OUT Exit status 0
+   2018-04-26T13:04:46.93-0600 [CELL/0] OUT Stopping instance f8d321a4-db3a-4ce0-4dc5-9cd0
+   2018-04-26T13:04:46.93-0600 [CELL/0] OUT Destroying container
+   2018-04-26T13:04:47.24-0600 [CELL/0] OUT Successfully destroyed container
+   2018-04-26T13:04:50.67-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:50.669  INFO 19 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+   2018-04-26T13:04:50.69-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:50.690  INFO 19 --- [           main] i.p.p.p.DemoTaskApplication              : Starting DemoTaskApplication on 5dfc4432-68cd-4383-507d-7541 with PID 19 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2018-04-26T13:04:50.69-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:50.691  INFO 19 --- [           main] i.p.p.p.DemoTaskApplication              : The following profiles are active: cloud
+   2018-04-26T13:04:50.77-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:50.774  INFO 19 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:04:50 UTC 2018]; root of context hierarchy
+   2018-04-26T13:04:51.84-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:51.841  INFO 19 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+   [31m2018-04-26T13:04:51.85-0600 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.[0m
+   2018-04-26T13:04:51.85-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:51.857  INFO 19 --- [           main] o.c.r.o.s.c.s.r.PooledDataSourceCreator  : Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2018-04-26T13:04:52.05-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:52.057  INFO 19 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$db64d43e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-04-26T13:04:52.50-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:52.509  INFO 19 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2018-04-26T13:04:52.55-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:52.551  INFO 19 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2018-04-26T13:04:52.55-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:52.552  INFO 19 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+   2018-04-26T13:04:52.57-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:52.569  INFO 19 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+   2018-04-26T13:04:52.78-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:52.788  INFO 19 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2018-04-26T13:04:52.78-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:52.789  INFO 19 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2019 ms
+   2018-04-26T13:04:53.01-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.016  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'clientCertificateMapper' to: [/*]
+   2018-04-26T13:04:53.01-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.016  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-04-26T13:04:53.01-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.016  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-04-26T13:04:53.01-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.017  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-04-26T13:04:53.01-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.017  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+   2018-04-26T13:04:53.01-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.017  INFO 19 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+   2018-04-26T13:04:53.14-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.141  INFO 19 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+   2018-04-26T13:04:53.14-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.148  WARN 19 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2018-04-26T13:04:53.76-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:53.761  INFO 19 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+   2018-04-26T13:04:54.23-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:54.233  INFO 19 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql]
+   2018-04-26T13:04:54.54-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:54.547  INFO 19 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql] in 313 ms.
+   2018-04-26T13:04:54.74-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:54.744  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:04:55.13-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.137  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:04:50 UTC 2018]; root of context hierarchy
+   2018-04-26T13:04:55.24-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.243  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.util.List<io.pivotal.pal.paluserprovidedservices.Cohort> io.pivotal.pal.paluserprovidedservices.HomeController.home()
+   2018-04-26T13:04:55.24-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.249  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-04-26T13:04:55.25-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.250  INFO 19 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-04-26T13:04:55.30-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.305  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:04:55.30-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.306  INFO 19 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:04:55.64-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.641  INFO 19 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+   2018-04-26T13:04:55.64-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.643  INFO 19 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name '__cloudDataSource' has been autodetected for JMX exposure
+   2018-04-26T13:04:55.65-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.650  INFO 19 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean '__cloudDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=__cloudDataSource,type=HikariDataSource]
+   2018-04-26T13:04:55.65-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.657  INFO 19 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+   2018-04-26T13:04:55.94-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.941  INFO 19 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+   2018-04-26T13:04:55.94-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:55.947  INFO 19 --- [           main] i.p.p.p.DemoTaskApplication              : Started DemoTaskApplication in 6.871 seconds (JVM running for 7.464)
+   2018-04-26T13:04:56.30-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:04:56.302  INFO 19 --- [           main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:04:50 UTC 2018]; root of context hierarchy
+   2018-04-26T13:04:56.39-0600 [APP/PROC/WEB/0] OUT Exit status 0
+   2018-04-26T13:04:56.40-0600 [CELL/0] OUT Exit status 0
+   2018-04-26T13:04:56.41-0600 [CELL/0] OUT Stopping instance 5dfc4432-68cd-4383-507d-7541
+   2018-04-26T13:04:56.41-0600 [CELL/0] OUT Destroying container
+   2018-04-26T13:04:56.42-0600 [API/1] OUT Process has crashed with type: "web"
+   2018-04-26T13:04:56.44-0600 [API/1] OUT App instance exited with guid cb637816-048b-447c-b086-19f2d226e7dc payload: {"instance"=>"5dfc4432-68cd-4383-507d-7541", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"Codependent step exited", "crash_count"=>3, "crash_timestamp"=>1524769496399570540, "version"=>"4e72b524-b499-482a-96ee-74ef5a6d51f1"}
+   2018-04-26T13:04:56.77-0600 [CELL/0] OUT Successfully destroyed container
+   2018-04-26T13:05:27.21-0600 [CELL/0] OUT Creating container
+   2018-04-26T13:05:27.65-0600 [CELL/0] OUT Successfully created container
+   2018-04-26T13:05:28.73-0600 [CELL/0] OUT Starting health monitoring of container
+   2018-04-26T13:05:28.82-0600 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -XX:ReservedCodeCacheSize=240M -XX:CompressedClassSpaceSize=18037K -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=98394K -Xss1M -Xmx368943K
+   2018-04-26T13:05:30.52-0600 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2018-04-26T13:05:30.52-0600 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2018-04-26T13:05:30.52-0600 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2018-04-26T13:05:30.52-0600 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2018-04-26T13:05:30.52-0600 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2018-04-26T13:05:30.52-0600 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2018-04-26T13:05:30.52-0600 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.0.1.RELEASE)
+   2018-04-26T13:05:30.67-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:30.673  INFO 15 --- [           main] pertySourceApplicationContextInitializer : Adding 'cloud' PropertySource to ApplicationContext
+   2018-04-26T13:05:30.77-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:30.778  INFO 15 --- [           main] nfigurationApplicationContextInitializer : Adding cloud service auto-reconfiguration to ApplicationContext
+   2018-04-26T13:05:30.79-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:30.798  INFO 15 --- [           main] i.p.p.p.DemoTaskApplication              : Starting DemoTaskApplication on 99d341c0-b8d4-4715-6666-3128 with PID 15 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2018-04-26T13:05:30.79-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:30.799  INFO 15 --- [           main] i.p.p.p.DemoTaskApplication              : The following profiles are active: cloud
+   2018-04-26T13:05:30.88-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:30.883  INFO 15 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:05:30 UTC 2018]; root of context hierarchy
+   2018-04-26T13:05:31.98-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:31.979  INFO 15 --- [           main] urceCloudServiceBeanFactoryPostProcessor : Auto-reconfiguring beans of type javax.sql.DataSource
+   [31m2018-04-26T13:05:31.99-0600 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.[0m
+   2018-04-26T13:05:31.99-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:31.994  INFO 15 --- [           main] o.c.r.o.s.c.s.r.PooledDataSourceCreator  : Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2018-04-26T13:05:32.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:32.213  INFO 15 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8200e310] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+   2018-04-26T13:05:32.69-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:32.692  INFO 15 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2018-04-26T13:05:32.73-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:32.733  INFO 15 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2018-04-26T13:05:32.73-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:32.733  INFO 15 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+   2018-04-26T13:05:32.75-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:32.751  INFO 15 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+   2018-04-26T13:05:32.99-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:32.995  INFO 15 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2018-04-26T13:05:32.99-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:32.995  INFO 15 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2117 ms
+   2018-04-26T13:05:33.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.209  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'clientCertificateMapper' to: [/*]
+   2018-04-26T13:05:33.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.210  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-04-26T13:05:33.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.210  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-04-26T13:05:33.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.210  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-04-26T13:05:33.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.211  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+   2018-04-26T13:05:33.21-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.211  INFO 15 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+   2018-04-26T13:05:33.33-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.329  INFO 15 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+   2018-04-26T13:05:33.33-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.337  WARN 15 --- [           main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2018-04-26T13:05:33.92-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:33.923  INFO 15 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+   2018-04-26T13:05:34.33-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:34.333  INFO 15 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql]
+   2018-04-26T13:05:34.64-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:34.648  INFO 15 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from class path resource [org/springframework/cloud/task/schema-mysql.sql] in 315 ms.
+   2018-04-26T13:05:34.77-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:34.771  INFO 15 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:05:35.19-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.197  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:05:30 UTC 2018]; root of context hierarchy
+   2018-04-26T13:05:35.30-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.301  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.util.List<io.pivotal.pal.paluserprovidedservices.Cohort> io.pivotal.pal.paluserprovidedservices.HomeController.home()
+   2018-04-26T13:05:35.30-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.306  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-04-26T13:05:35.30-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.307  INFO 15 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-04-26T13:05:35.38-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.386  INFO 15 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:05:35.38-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.386  INFO 15 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-04-26T13:05:35.76-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.768  INFO 15 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+   2018-04-26T13:05:35.77-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.771  INFO 15 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name '__cloudDataSource' has been autodetected for JMX exposure
+   2018-04-26T13:05:35.82-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.822  INFO 15 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean '__cloudDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=__cloudDataSource,type=HikariDataSource]
+   2018-04-26T13:05:35.83-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:35.834  INFO 15 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+   2018-04-26T13:05:36.12-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:36.129  INFO 15 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+   2018-04-26T13:05:36.13-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:36.135  INFO 15 --- [           main] i.p.p.p.DemoTaskApplication              : Started DemoTaskApplication in 6.776 seconds (JVM running for 7.302)
+   2018-04-26T13:05:36.46-0600 [APP/PROC/WEB/0] OUT 2018-04-26 19:05:36.466  INFO 15 --- [           main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@e73f9ac: startup date [Thu Apr 26 19:05:30 UTC 2018]; root of context hierarchy
+   2018-04-26T13:05:36.60-0600 [APP/PROC/WEB/0] OUT Exit status 0
+   2018-04-26T13:05:36.60-0600 [CELL/0] OUT Exit status 0
+   2018-04-26T13:05:36.63-0600 [CELL/0] OUT Stopping instance 99d341c0-b8d4-4715-6666-3128
+   2018-04-26T13:05:36.63-0600 [CELL/0] OUT Destroying container
+   2018-04-26T13:05:36.65-0600 [API/1] OUT Process has crashed with type: "web"
+   2018-04-26T13:05:36.66-0600 [API/1] OUT App instance exited with guid cb637816-048b-447c-b086-19f2d226e7dc payload: {"instance"=>"99d341c0-b8d4-4715-6666-3128", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"Codependent step exited", "crash_count"=>4, "crash_timestamp"=>1524769536603417842, "version"=>"4e72b524-b499-482a-96ee-74ef5a6d51f1"}
+   2018-04-26T13:05:36.98-0600 [CELL/0] OUT Successfully destroyed container
